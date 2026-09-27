@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Tema escuro (padrão) — valores em canais RGB separados por espaço */
+  --color-canvas:             13 17 23;
+  --color-canvas-subtle:      22 27 34;
+  --color-canvas-inset:       1 4 9;
+  --color-border:             48 54 61;
+  --color-border-muted:       33 38 45;
+  --color-fg:                 230 237 243;
+  --color-fg-muted:           139 148 158;
+  --color-fg-subtle:          110 118 129;
+  --color-accent:             88 166 255;
+  --color-accent-emphasis:    31 111 235;
+  --color-success:            63 185 80;
+  --color-success-emphasis:   35 134 54;
+  --color-danger:             248 81 73;
+  --color-danger-emphasis:    218 54 51;
+  --color-attention:          210 153 34;
+  --color-attention-emphasis: 158 106 3;
+  --color-severe:             219 109 40;
+  --color-brand:              167 150 255;
+}
+
+:root.light {
+  /* Tema claro */
+  --color-canvas:             255 255 255;
+  --color-canvas-subtle:      246 248 250;
+  --color-canvas-inset:       234 238 242;
+  --color-border:             208 215 222;
+  --color-border-muted:       234 238 241;
+  --color-fg:                 36 41 47;
+  --color-fg-muted:           101 109 118;
+  --color-fg-subtle:          110 119 129;
+  --color-accent:             9 105 218;
+  --color-accent-emphasis:    9 105 218;
+  --color-success:            26 127 55;
+  --color-success-emphasis:   26 127 55;
+  --color-danger:             207 34 46;
+  --color-danger-emphasis:    165 29 42;
+  --color-attention:          159 122 0;
+  --color-attention-emphasis: 119 90 0;
+  --color-severe:             180 75 0;
+  --color-brand:              42 31 85;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgb(var(--color-canvas));
+  color: rgb(var(--color-fg));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-border));
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-fg-subtle));
+}

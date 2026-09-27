@@ -1,0 +1,2 @@
+# Scripts shell rodam dentro do WSL — CRLF quebra o bash
+*.sh text eol=lf

@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Environment / secrets
+.env
+.env.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Certificado extraído pelo scripts/fix-netskope-cert-docker.sh (cada máquina gera o seu)
+scripts/certs/
